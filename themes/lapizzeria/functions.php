@@ -5,4 +5,11 @@ function lapizzeria_styles(){
 }
 
 add_action('wp_enqueue_scripts', 'lapizzeria_styles');
-?>
+
+
+function lapizzeria_menus(){
+    register_nav_menus(array(
+        'header-menu' => 'Header Menu'
+    ));
+}
+add_action('init', 'lapizzeria_menus');
