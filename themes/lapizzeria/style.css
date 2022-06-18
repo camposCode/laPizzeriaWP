@@ -37,6 +37,7 @@ body{
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 2;
+    background-color: var(--blanco);
 }
 
 p{
@@ -69,6 +70,21 @@ h4{
 .text-center{
     text-align: center;
 }
+
+.seccion{
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .seccion.contenedor{
+        background-color: var(--blanco);
+        margin-top: -9rem;
+        z-index: 2;
+        position: relative;
+        padding: 6rem;
+    }
+}
+
 
 /* Globales */
 a{
@@ -294,4 +310,34 @@ img{
 .site-footer .direccion p{
     text-align: center;
     font-size: 1.2rem;
+}
+
+/* Páginas */
+.hero{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 45rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero:after{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+
+.hero h1{
+    color: var(--blanco);
+    z-index: 1;
+    position: relative;
 }
