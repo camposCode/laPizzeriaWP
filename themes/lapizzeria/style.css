@@ -85,6 +85,36 @@ h4{
     }
 }
 
+/* Botones */
+.boton{
+    display: block;
+    flex: 1;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--fuenteHeadings);
+    text-transform: uppercase;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+}
+
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton-primario{
+    background-color: var(--naranja);
+    color: var(--blanco);
+}
+
+.boton-secundario{
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+
 
 /* Globales */
 a{
@@ -396,4 +426,8 @@ img{
 
 .informacion-entrada h2{
     margin: 0;
+}
+
+.entrada-blog .boton{
+    margin-top: 2rem;
 }
