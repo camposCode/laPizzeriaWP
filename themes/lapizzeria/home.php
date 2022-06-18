@@ -41,6 +41,12 @@
             </div>
         </article>
         <?php endwhile; ?>
+
+        <div class="paginacion">
+            <?php next_posts_link('back'); ?>
+            <?php previous_posts_link('next'); ?>
+        </div>
+        
     </main>
 
     <?php get_sidebar(); ?>

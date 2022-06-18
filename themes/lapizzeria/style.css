@@ -111,8 +111,9 @@ h4{
 }
 
 .boton-secundario{
-    background-color: var(--rojo);
+    background-color: var(--verde);
     color: var(--blanco);
+    padding: .3rem 2rem;
 }
 
 
@@ -430,4 +431,14 @@ img{
 
 .entrada-blog .boton{
     margin-top: 2rem;
+}
+
+.paginacion{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.paginacion a:first-of-type{
+    margin-right: 1rem;
 }
