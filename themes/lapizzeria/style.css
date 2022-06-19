@@ -96,6 +96,11 @@ h4{
     text-transform: uppercase;
     border-radius: .5rem;
     padding: 1rem 3rem;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
